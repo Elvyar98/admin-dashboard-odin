@@ -6,15 +6,57 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 40fr 1fr;
+
+    font-family: 'Baskervville', serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+
 }
 
 .header-container {
     grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+}
+
+.header-title {
+    grid-column: 1 / 2;
+    justify-self: flex-end;
+}
+
+.header-nav {
+    width: 70%;
+    grid-column: 2 / 3;
+
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header-nav li {
+    list-style-type: none;
+}
+
+.header-nav a,
+.side-bar a {
+    text-decoration: none;
+}
+
+.header-nav a:link,
+.side-bar a:link {
+    color: linen  
 }
 
 .side-bar {
     grid-area: 2 / 1 / 3 / 2;
+    
 }
 
 .main-container {
@@ -24,6 +66,9 @@ body {
 footer {
     grid-area: 3 / 1 / 4 / 3;
 }
+
+
+
 
 a.portfolio-project-button {
     padding: 1px 6px;
