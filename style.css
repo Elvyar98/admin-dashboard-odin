@@ -187,7 +187,8 @@ body {
     background-color: rgb(20, 30, 40);
     height: auto;
     border-radius: 10%;
-    overflow:hidden
+    overflow:hidden;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-card h3 {
